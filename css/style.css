@@ -1,0 +1,140 @@
+/* '@font-face' links your .ttf to your css to then your html so that you can use downloaded fonts. you need to initially identify your font in its folder before then applying its 'font-family' to a more specific css element that targets which text on the page you want assigned that font */
+
+@font-face {
+    font-family: RubikBubbles;
+    src: url(/media/RubikBubbles-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(/media/Nunito-VariableFont_wght.ttf);
+}
+
+/* you can have as many css files as you like as long as you are aware of conflicting code elements such as targeting the html/body etc more than once in multiple css files. you can only have one set element per html tag/class/id. you can, however, assign multiple tags per element in order to visually represent them both as the same in your viewport. */
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    margin: 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 
+'INDEX' FIRST PAGE CSS 
+It is important to first decide how you'll organize your file and then continue to follow that system thoughout your coding process. If you're confused, the computer is confused!
+*/
+
+/* Header CSS */
+
+header {
+    height: 155px;
+    width: 100%;
+    background-color: rgb(217, 112, 147, 0.7);
+    text-align: center;
+    opacity: 0.7;
+}
+
+nav {
+    position: relative;
+}
+
+.titlecard a {
+    color: whitesmoke;
+    transition: ease-in-out 0.8s;
+    font-size: 122px;
+}
+
+.titlecard {
+    position: relative;
+    font-family: RubikBubbles;
+}
+
+.titlecard a:hover {
+    opacity: 1;
+    color: aqua;
+    font-size: 124px;
+}
+
+h1 {
+    margin: 0;
+    height: 130px;
+}
+
+button {
+    font-family: Nunito;
+    width: 250px;
+    height: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    color: palevioletred;
+    transition: ease 0.5s;
+}
+
+button:hover {
+    opacity: 1;
+    color: rgb(34, 193, 195);
+    background-color: whitesmoke;
+}
+
+/* Main CSS */
+
+#indexmain {
+    width: 100%;
+    text-align: center;
+}
+
+video {
+    padding: 1%;
+    width: 720px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* Footer CSS */
+
+footer {
+    color: whitesmoke;
+    font-family: Nunito;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(217, 112, 147, 0.7);
+    position: absolute;
+    bottom: 0;
+}
+
+marquee {
+    padding: 1.5%;
+}
+
+/* ABOUT ME PAGE */
+
+#abtmain {
+    text-align: center;
+}
+
+.mybio {
+    width: 365px;
+    font-family: Nunito;
+    color: whitesmoke;
+    position: absolute;
+    text-align: right;
+    left: 20vw;
+    top: 23vh;
+}
+
+.luigipng {
+    position: absolute;
+    top: 23vh;
+    left: 51vw;
+    height: 55%;
+    width: 25%;
+}
