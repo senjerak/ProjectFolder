@@ -26,11 +26,11 @@ a {
 }
 
 /* 
-'INDEX' FIRST PAGE CSS 
-It is important to first decide how you'll organize your file and then continue to follow that system thoughout your coding process. If you're confused, the computer is confused!
+-------------- 'INDEX' FIRST PAGE CSS --------------
+It is important to first decide how you'll organize your file and then continue to follow that system thoughout your coding process. Comments like these are ignored by the computer so you can contextualize your code via '/ * * /'
 */
 
-/* Header CSS */
+/* ----- Header CSS ----- */
 
 header {
     height: 155px;
@@ -85,7 +85,7 @@ button:hover {
     background-color: whitesmoke;
 }
 
-/* Main CSS */
+/* ----- Main CSS ----- */
 
 #indexmain {
     width: 100%;
@@ -99,7 +99,7 @@ video {
     border-radius: 25px;
 }
 
-/* Footer CSS */
+/* ----- Footer CSS ----- */
 
 footer {
     color: whitesmoke;
@@ -115,7 +115,7 @@ marquee {
     padding: 1.5%;
 }
 
-/* ABOUT ME PAGE */
+/* -------------- ABOUT ME PAGE -------------- */
 
 #abtmain {
     text-align: center;
@@ -135,6 +135,38 @@ marquee {
     position: absolute;
     top: 23vh;
     left: 51vw;
-    height: 55%;
-    width: 25%;
+}
+
+/* -------------- CONTACT PAGE -------------- */
+
+.emailme {
+    background-color: rgb(0, 255, 255, 0.7);
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.emailsend {
+    border-radius: 10px;
+    border-style: none;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    margin: 2%;
+    background: rgba(10, 82, 60, 0.3);
+    transition: ease 1s;
+}
+
+.emailsend:hover {
+    background: rgba(10, 82, 60, 0.8);
+}
+
+.sendtext {
+    font-family: Nunito;
+    color: cyan;
+    display: block;
+    position: relative;
+    font-size: 25px;
 }

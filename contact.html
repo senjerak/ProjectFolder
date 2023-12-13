@@ -2,12 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8
-    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netverse</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <header>
+
+        <div class="titlecard">
+
+            <h1>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </h1>
+
+        </div>
+
+        <nav>
+            <a href="gallery.html"><button>gallery</button></a>
+            <a href="index.html"><button>home</button></a>
+            <a href="abtme.html"><button>about me</button></a>
+        </nav>
+
+    </header>
+
+    <main id="contactmain">
+
+        <div class="emailme">
+            <form action="https://formspree.io/f/xjvzlrvk" method="POST">
+
+                <div class="mail">
+
+                    <label class="emailcard">
+                        <p class="sendtext1">Your email:</p>
+                        <input class="msg" type="email" name="email">
+                    </label>
+
+                    <label class="emailcard">
+                        <p class="sendtext1">Your message:</p>
+                        <textarea rows="1" class="msg" name="message"></textarea>
+                    </label>
+                </div>
+
+                <button class="emailsend" type="submit">
+                    <p class="sendtext">SEND</p>
+                </button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <marquee behavior="alternate">✧ Web Art & Web Dev Example Webpage ✧</marquee>
+    </footer>
 
 </body>
 
