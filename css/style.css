@@ -16,7 +16,7 @@ html,
 body {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(0deg, rgb(15, 29, 22) 0%, rgb(26, 19, 5) 100%);
     margin: 0;
     overflow: hidden;
 }
@@ -35,7 +35,6 @@ It is important to first decide how you'll organize your file and then continue 
 header {
     height: 155px;
     width: 100%;
-    background-color: rgb(217, 112, 147, 0.7);
     text-align: center;
     opacity: 0.7;
 }
@@ -56,8 +55,7 @@ nav {
 }
 
 .titlecard a:hover {
-    opacity: 1;
-    color: aqua;
+    color: rgb(49, 74, 62);
     font-size: 124px;
 }
 
@@ -73,7 +71,7 @@ button {
     margin-left: 25px;
     text-decoration: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: aquamarine;
     color: palevioletred;
     transition: ease 0.5s;
@@ -99,14 +97,16 @@ video {
     border-radius: 25px;
 }
 
+#subtext {
+    color: whitesmoke;
+    font-family: Nunito;
+}
+
 /* ----- Footer CSS ----- */
 
 footer {
-    color: whitesmoke;
-    font-family: Nunito;
     height: 50px;
     width: 100%;
-    background-color: rgb(217, 112, 147, 0.7);
     position: absolute;
     bottom: 0;
 }
@@ -127,23 +127,35 @@ marquee {
     color: whitesmoke;
     position: absolute;
     text-align: right;
-    left: 20vw;
+    left: 30vw;
     top: 23vh;
 }
 
 .luigipng {
     position: absolute;
-    top: 23vh;
-    left: 51vw;
+    top: 0;
 }
 
 /* -------------- CONTACT PAGE -------------- */
 
+textarea,
+input {
+    border: none;
+    border-radius: 5px;
+}
+
+.mail {
+    position: relative;
+    left: 3%;
+}
+
 .emailme {
     background-color: rgb(0, 255, 255, 0.7);
-    text-align: center;
-    width: 40vw;
-    margin: auto;
+
+    width: 35vw;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2%;
     border-radius: 15px;
 }
@@ -151,8 +163,8 @@ marquee {
 .emailsend {
     border-radius: 10px;
     border-style: none;
-    height: 100px;
-    width: 400px;
+    height: 10%;
+    width: 57%;
     position: relative;
     margin: 2%;
     background: rgba(10, 82, 60, 0.3);
@@ -169,4 +181,38 @@ marquee {
     display: block;
     position: relative;
     font-size: 25px;
+}
+
+.sendtext1 {
+    font-size: 20px;
+    padding: 0;
+    margin: 1;
+    :
+}
+
+.msg {
+    width: 55%;
+}
+
+.socialmedia {
+    position: relative;
+    background-color: red;
+    right: 35vw;
+    top: 30vh;
+}
+
+
+/* GALLERY */
+
+#gallerytitle a {
+    color: whitesmoke;
+    transition: ease-in-out 0.8s;
+    font-size: 110px;
+    position: relative;
+    font-family: RubikBubbles;
+}
+
+#gallerytitle a:hover {
+    color: aqua;
+    font-size: 111px;
 }
