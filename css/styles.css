@@ -1,8 +1,8 @@
 /* '@font-face' links your .ttf to your css to then your html so that you can use downloaded fonts. you need to initially identify your font in its folder before then applying its 'font-family' to a more specific css element that targets which text on the page you want assigned that font */
 
 @font-face {
-    font-family: RubikBubbles;
-    src: url(/media/RubikBubbles-Regular.ttf);
+    font-family: Nabla;
+    src: url(../media/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
 }
 
 @font-face {
@@ -16,13 +16,14 @@ html,
 body {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(0deg, rgb(15, 29, 22) 0%, rgb(26, 19, 5) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 55%, rgba(66, 96, 193, 1) 100%);
     margin: 0;
     overflow: hidden;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: inherit;
 }
 
 /* 
@@ -36,27 +37,31 @@ header {
     height: 155px;
     width: 100%;
     text-align: center;
-    opacity: 0.7;
+    z-index: 1;
+    position: relative;
 }
 
 nav {
-    position: relative;
+    position: relative !important;
 }
 
 .titlecard a {
-    color: whitesmoke;
     transition: ease-in-out 0.5s;
-    font-size: 122px;
+    font-size: 122px !important;
 }
 
 .titlecard {
-    position: relative;
-    font-family: RubikBubbles;
+    position: relative !important;
+    font-family: Nabla;
+    margin-bottom: 3%;
+}
+
+h1 {
+    margin: 0 !important;
 }
 
 .titlecard a:hover {
-    color: rgb(95, 139, 118);
-    font-size: 124px;
+    font-size: 124px !important;
 }
 
 h1 {
@@ -65,27 +70,82 @@ h1 {
 }
 
 button {
-    font-family: Nunito;
+    font-family: Nunito !important;
     width: 250px;
-    height: 20px;
-    margin-left: 25px;
+    height: 35px;
+    margin-left: 25px !important;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     background-color: rgba(10, 82, 60, 0.8);
     transition: ease 0.2s;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 
 button:hover {
     opacity: 1;
-    color: black;
+    color: black !important;
     background-color: whitesmoke;
+}
+
+/* ----- Left-Right Bars CSS ----- */
+
+#pfp {
+    width: 55%;
+    margin-top: 10%;
+    position: relative;
+    border: solid 5px cyan;
+}
+
+#cursor {
+    width: 65px;
+    position: absolute;
+    margin: 0;
+    bottom: 7%;
+}
+
+.left {
+    background-image: url('../media/glitterstars.gif');
+    height: 72%;
+    width: 25%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    border: solid 2px black;
+}
+
+.right {
+    background-image: url('../media/glitterstars.gif');
+    height: 72%;
+    width: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    text-align: center;
+    border: solid 2px black;
 }
 
 /* ----- Main CSS ----- */
 
+audio {
+    height: 20px;
+    width: 100%;
+    z-index: -1;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+}
+
+#star {
+    height: 35px;
+    width: 35px;
+    margin-left: 1%;
+}
+
 #indexmain {
+    position: absolute;
+    top: 30%;
     width: 100%;
     text-align: center;
 }
@@ -98,6 +158,13 @@ video {
 }
 
 #subtext {
+    padding: 5%;
+    padding-bottom: 0;
+    color: whitesmoke;
+    font-family: Nunito;
+}
+
+#subtexta {
     color: whitesmoke;
     font-family: Nunito;
 }
@@ -112,7 +179,8 @@ footer {
 }
 
 marquee {
-    padding: 1.5%;
+    padding: 1%;
+    background: rgb(0, 0, 0);
 }
 
 /* -------------- ABOUT ME PAGE -------------- */
@@ -218,15 +286,28 @@ input {
 
 /* GALLERY */
 
-#gallerytitle a {
-    color: whitesmoke;
-    transition: ease-in-out 0.8s;
-    font-size: 110px;
-    position: relative;
-    font-family: RubikBubbles;
+main {
+    overflow-y: auto;
 }
 
-#gallerytitle a:hover {
-    color: aqua;
-    font-size: 111px;
+#carousel {
+    width: 720px;
+    top: 20.5vh;
+    right: 28vw;
+    position: absolute;
+
+}
+
+.caroimg {
+    max-height: 40rem;
+    width: 100%;
+}
+
+.carousel-caption {
+    display: inline-block;
+    height: 30%;
+    width: 100%;
+    background: rgba(7, 7, 7, 0.7);
+    margin: 0 !important;
+    padding: 0 !important;
 }
